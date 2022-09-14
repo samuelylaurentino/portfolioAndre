@@ -1,0 +1,316 @@
+/* preferences 
+
+1) typography
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+2) colors
+#fcfcfc
+#ccc
+
+
+7) whitespace
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0.8rem 0.2rem rgba(20, 5, 120, 0.505);
+}
+*::selection {
+  background-color: #150578;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  color: #565656;
+  background-color: #fcfcfc;
+  font-size: 1.8rem;
+}
+
+/* reusable items */
+.first-heading {
+  font-size: 4.4rem;
+  color: #565656;
+  line-height: 1.1;
+  padding-bottom: 2rem;
+}
+
+.second-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #565656;
+}
+
+.third-heading {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  color: #2d2d2d;
+}
+
+.home-btn:link,
+.home-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.home-btn:hover,
+.home-btn:active {
+  background-color: #150578;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+}
+
+.grid--2cols {
+  grid-template-columns: 1fr 2fr;
+  column-gap: 4rem;
+}
+/* header */
+
+.header {
+  font-size: 2rem;
+  background-color: #ccc;
+}
+
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+/* ******************** */
+/* hero section */
+/* ******************** */
+
+.hero-section {
+  background-color: #cccccc;
+  padding: 12rem 8rem;
+}
+
+.hero-box {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+/* ******************** */
+/* latest posts section */
+/* ******************** */
+
+.latest-section {
+  padding: 6.4rem 3.2rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.posts {
+  line-height: 1.4;
+}
+.post-link {
+  display: inline-block;
+  font-size: 2.4rem;
+  padding-bottom: 1.2rem;
+
+  transition: all 0.3s;
+}
+.post-link:link,
+.post-link:visited {
+  color: #2d2d2d;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.post-link:hover,
+.post-link:active {
+  background-color: #150578;
+  color: #fff;
+  border: none;
+}
+
+.post-header {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.post-local {
+  font-size: 1.8rem;
+  color: #a6a6a6;
+}
+
+/* ******************** */
+/* experience section */
+/* ******************** */
+
+.experience-section {
+  padding: 8rem 4.8rem;
+}
+
+.experience-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.aside-box {
+  margin-bottom: 3rem;
+}
+.roles {
+  font-size: 2.4rem;
+  list-style: none;
+  line-height: 1.2;
+  color: #2d2d2d;
+}
+
+.role {
+  padding-bottom: 1.8rem;
+}
+
+.institution,
+.date {
+  font-size: 2rem;
+  color: #a6a6a6;
+  font-weight: 500;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ccc;
+  color: #2d2d2d;
+  border: none;
+  padding: 3.2rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #150578;
+  color: #fff;
+}
+
+/* .link:link,
+.link:visited {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+} */
+
+/* ******************** */
+/* contact section */
+/* ******************** */
+
+.contact-section {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 8rem 4.8rem;
+}
+
+.email-me {
+  padding-bottom: 2rem;
+}
+.email {
+  text-decoration: none;
+  padding: 0.8rem 0.4rem;
+  color: #5b5b5b;
+}
+
+.email:hover {
+  background-color: #150578;
+  color: #fff;
+}
+
+.social-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #5b5b5b;
+}
+
+.social-icon:hover {
+  color: #150578;
+}
+
+.footer {
+  font-size: 1.2rem;
+  color: #5b5b5b;
+}
+
+/* for tablets */
+/* lower than 804px */
+@media (max-width: 50.25em) {
+  html {
+    font-size: 70%;
+  }
+
+  .hero-section,
+  .latest-section,
+  .experience-section,
+  .contact-section,
+  .container {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+}
+
+/* lower than 600 */
+@media (max-width: 37.5em) {
+  html {
+    font-size: 60%;
+  }
+  .grid--2cols {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .experience-box {
+    gap: 2rem;
+  }
+}
